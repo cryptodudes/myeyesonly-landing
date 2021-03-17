@@ -1,0 +1,25 @@
+header.masthead {
+  position: relative;
+  background: url('../img/bg-masthead.jpg') no-repeat center center;
+  @include background-cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: rgba(0,0,0,.5); // Tint color
+  background-blend-mode: multiply;
+  .overlay {
+    position: absolute;
+    background-color: $gray-900;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+  }
+  @media (min-width: 768px) {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    h1 {
+      font-size: 4em;
+    }
+  }
+}
